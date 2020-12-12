@@ -9,9 +9,17 @@ body{
     width: 100%;
     height: 70px;
     background-color: coral;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }
 #central{
     height: 700px;
+    margin-top: 70px;
+    float: left;
+    width: 100%;
+    margin-bottom: 70px;
 }
 #nav, #aside{
     width: 20%;
@@ -42,4 +50,31 @@ body{
 #footer2{
     height: 70px;
     background-color: black;    
+}
+#whats{
+    width: 60px;
+    height: 60px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: fixed;
+    background-color: green;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2;
+    color:white;
+    z-index: 5;
+}
+#publicidad{
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 250px;
+    left: 35%;
+    z-index: 6;
+    -webkit-box-shadow: 2px 5px 15px 13px #82FFF2; 
+    box-shadow: 2px 5px 15px 13px #82FFF2;
 }
