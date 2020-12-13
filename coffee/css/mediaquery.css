@@ -1,0 +1,50 @@
+@media screen and (min-width:300px){
+    body{
+        background-color:red ;
+    }
+    .col{
+        width: 100% ;
+    }
+    #news .columna3{
+        float: left;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    nav{
+        display:none;
+    }
+}
+@media screen and (min-width:768px){
+    body{
+        background-color: green;
+    }
+    nav{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (min-width:992px){
+    body{
+        background-color: whitesmoke;
+    }
+    .col{
+        width: 50%;
+    }
+    #news .columna3{
+        float: left;
+        width: 30%;
+        height: 200px;
+        margin-right: 2.5%;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media print {
+    header{
+        display: none;
+    }
+}
