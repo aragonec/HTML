@@ -5,6 +5,7 @@
 body{
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -20,13 +21,14 @@ h3{
 }
 header{
     position: fixed;
-    height: 70px;
+    height: 60px;
     border-bottom: 1px solid #c1c1c1;
-    width: 100%;   
+    width: 100%;
+    background-color: whitesmoke;   
 }
 header > #logo{
     float: left;
-    margin-left: 5%;
+    margin-left: 30px;
     padding-top: 15px;
 }
 header > #logo > h2{
@@ -36,7 +38,7 @@ header > nav{
     font-size: 1rem;
     float: right;
     width: 40%;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 header > nav > ul > li{
     float: left;
@@ -55,7 +57,6 @@ header > nav > ul > li > a:hover{
 }
 section#main{
     min-height: 500px;
-    background-color: palegoldenrod;
     margin-top: 70px;
     width: 100%;
     float: left;
@@ -87,4 +88,79 @@ section#main .bola img{
     float: right;
     margin-right:90px;
     margin-top: 10px;
+}
+#numeros{
+    border-left: 30px solid #19a49c;
+    width: 100%;
+    height: 150px;
+    padding-left: 70px;
+    margin-top: 100px;
+}
+#numeros .col{
+    width: 150px;
+}
+#numeros > .col > h5{
+    border-bottom: 1px solid #1d1d1d;
+    width: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#news, #contact{
+    margin-left: 30px;
+    width: 100%;
+    min-height: 300px;
+    display: block;
+    float: left;
+}
+#h2news{
+    margin-top: 50px;
+}
+#news .columna3{
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin-right: 2.5%;
+}
+#news .columna3 a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+#news .columna3 a img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+#contact fieldset{
+    border: none;
+    padding: 5px;
+}
+#contact fieldset label{
+    display: block;
+    width: 100%;
+}
+#contact fieldset input, #contact fieldset textarea{
+    display: block;
+    width: 90%;
+    border: 1pz solid #eeeeee;
+    padding: 5px;
+    height: 15px;
+}
+#contact fieldset button{
+    width: 120px;
+    padding: 5px;
+    height: 30px;
+    background-color: #19a49c;
+    color: white;
+    border: none;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #19a49c;
+    color: white;
+    float: left;
 }
