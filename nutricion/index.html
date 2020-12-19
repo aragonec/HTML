@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandra Baeza</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Asul&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+</head>
+<body>
+    <header id="header1">        
+        
+        <div id=logo>
+            <img id="logo1" src="img/logoale.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="#">Planes a tu medida</a>
+                </li>
+                <li>
+                    <a href="#">Fitness coach</a>
+                </li>
+                <li>
+                    <a href="#">Recetas</a>
+                </li>
+                <li>
+                    <a href="#">Cursos online</a>
+                </li>
+            </ul>
+        </nav>        
+        <div class="dropdown">
+            <button class="dropbtn"> 
+                <img id="menumovil" src="img/menumovil.png" alt=""> 
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Acerca de mí</a>
+                <a href="#">Fitness coach</a>
+                <a href="#">Recetas</a>
+                <a href="#">Cursos online</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header1").style.marginTop = "0px";
+          } else {
+            document.getElementById("header1").style.marginTop = "-50%";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <section id="main">
+        <div>
+            <img src="img/main3.jpg" alt="">
+        </div> 
+        <div id="citas">
+        <h4>Empieza el camino a una vida mas saludable</h4>
+        <p><a href="#">Agenda tu cita aqui</a></p>
+        </div>
+    </section>
+    <section id="servicios">
+        <div class="columna3">
+            <a href="">
+                <img src="img/mealplan.jpg" 
+                onmouseover="this.src='img/mealplan2.jpg'"
+                onmouseout="this.src='img/mealplan.jpg'"
+                border="0" alt=""/>
+                <h4>PLAN ALIMENTICIO</h4>
+                <p>
+                    <br>Plan personalizado según tu requerimiento, objetivo y estilo de vida.
+                    <br>
+                </p>
+            </a>
+        </div>
+        <div class="columna3">
+            <a href="">
+                <img src="img/workout.jpg"                 
+                onmouseover="this.src='img/workout2.jpg'"
+                onmouseout="this.src='img/workout.jpg'"
+                border="0" alt="">
+                <h4>ENTRENAMIENTO FÍSICO</h4>
+                <p>
+                    <br>¿Necesitas ayuda con ejercicio? Te apoyo con rutina de ejercicios en casa o gimnasio.
+                </p>
+            </a>
+        </div>
+        <div class="columna3">
+            <a href="">
+                <img src="img/recetas1.jpg"                 
+                onmouseover="this.src='img/recetas2.jpg'"
+                onmouseout="this.src='img/recetas1.jpg'"
+                border="0" alt="">
+                <h4>RECETAS</h4>
+                <p>
+                    <br>Te comparto recetas saludables fáciles que puedes incluir en tu día a día.
+                </p>
+            </a>
+        </div>
+    </section>
+    <section id="tarifas">
+        <h2>PRECIOS</h2>
+        <div class="columna3">
+            <div>
+                <a>
+                    <h4 style="color: #40e0d0;">CONSULTA <br>PRESENCIAL</h4>
+                    <ul>
+                        <li><h3>Inicial</h3></li>
+                        <li style="font-size: 2vw;"><a class="signo">$</a>
+                            <h2 style="color:#40e0d0;">550</h2>
+                        </li>
+                        <li><h3>Seguimiento</h3></li>
+                        <li style="font-size: 2vw;"><a class="signo">$</a>
+                            <h2 style="color:#40e0d0;">350</h2>
+                        </li>
+                    </ul>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="columna3">
+            <div>
+            <a>
+                <h4 style="color: #40e0d0;">CONSULTA <br>ONLINE</h4>
+                <ul>
+                    <li><h3>Inicial</h3></li>
+                    <li style="font-size: 2vw;"><a class="signo">$</a>
+                        <h2 style="color:#40e0d0;">350</h2>
+                    </li>
+                    <li><h3>Seguimiento</h3></li>
+                    <li style="font-size: 2vw;"><a class="signo">$</a>
+                        <h2 style="color:#40e0d0;">250</h2>
+                    </li>
+                </ul>
+            </a>
+            </div>
+        </div>
+        <div class="columna3">
+            <div>
+            <a>
+                <h4 id="promo" style="color: #40e0d0;">PROMOCIÓN <br> PAREJAS</h4>
+                <ul id=promo1>
+                    <li><h3>Presencial</h3></li>
+                    <li>Inicial/Seguimiento</li>
+                    <li style="font-size: 2vw;"><a class="signo">$</a>
+                    <h2 class="promo3"style="color:#40e0d0;">900/650</h2>
+                    </li>
+                    <li><h3>Online</h3></li>
+                    <li>Inicial/Seguimiento</li>
+                    <li style="font-size: 2vw;"><a class="signo">$</a>
+                    <h2 class="promo3"style="color:#40e0d0;">600/400</h2>
+                    </li>
+                </ul>
+            </a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="col" style="margin-top: 0px;">
+            <h2 class="contact1">Agenda tu cita</h2>
+            <fieldset>
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Nombre" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Email</label>
+                <input type="email" placeholder="Email" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Telefono</label>
+                <input type="number" placeholder="Teléfono" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Asunto</label>
+                <input type="text" placeholder="Asunto" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí tu mensaje" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit"><a href="mailto:correo@programacionweb.com">Contactar</a> </button>
+            </fieldset>
+        </div>
+        <div class="col">
+            <h2 class="contact1">Como llegar</h2>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112019.87293304257!2d-106.13465803360607!3d28.671063847419106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea449d5d484033%3A0xb7f1a7a706dd1d7b!2sChihuahua!5e0!3m2!1sen!2smx!4v1607892036503!5m2!1sen!2smx" 
+             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="col1">columna1</div>
+        <div class="col2">
+            <br>Todos los derechos reservados.
+        </div>
+        <div class="col3">
+            <div id="social">Sígueme en redes sociales</div>
+            <div id="logosredes">
+                <button><img src="img/fb.png" alt=""></button>
+                <button><img src="img/ig.png" alt=""></button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
